@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Yichong Zhang is an undergraduate at Tsinghua University building efficient and reliable AI systems through cross-stack optimization and automated systems development.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Yichong Zhang</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231772c5'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='21' text-anchor='middle' fill='white'%3EY%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#research">Skip to research</a>
+<main>
+  <header class="intro">
+    <div class="profile">
+      <img class="portrait" src="assets/yichong-zhang.png" alt="Portrait of Yichong Zhang" width="1122" height="1402">
+      <h1>Yichong Zhang</h1>
+      <nav class="contact" aria-label="Contact and profiles">
+        <a href="mailto:yichong-23@mails.tsinghua.edu.cn">Email</a>
+        <a href="assets/Yichong_Zhang_CV.pdf" download>CV</a>
+        <a href="https://www.linkedin.com/in/yichong-zhang-502653376/">LinkedIn</a>
+        <a href="https://scholar.google.com/citations?user=B-Io7DoAAAAJ&amp;hl=en&amp;oi=ao">Google Scholar</a>
+      </nav>
+    </div>
+    <div class="intro-copy">
+    <p>I am a senior undergraduate student at <a href="https://www.tsinghua.edu.cn/en/">Tsinghua University</a>, studying Mathematics and Physics alongside Electrical Engineering. I spent the 2025–2026 academic year as a visiting undergraduate student at <a href="https://www.harvard.edu/">Harvard College</a>.</p>
+    <p>This past summer, I was fortunate to begin working with <a href="https://engineering.stanford.edu/people/oyekunle-olukotun">Prof. Kunle Olukotun</a> and <a href="https://weiya711.github.io/">Prof. Olivia Hsu</a> on testing and verification for coding agents, aiming to make agent-generated code more reliable and better aligned with intended behavior. During my visit to Harvard, I was grateful for the opportunity to begin working with <a href="https://vijay.seas.harvard.edu/">Prof. Vijay Janapa Reddi</a> and <a href="https://zishenwan.github.io/">Prof. Zishen Wan</a> on systems and architecture for embodied AI. Previously, I had the privilege of working with <a href="https://nicsefc.ee.tsinghua.edu.cn/people/YuWang">Prof. Yu Wang</a> at Tsinghua on GPU systems and kernel optimization.</p>
+    <p><strong><em>I am currently seeking a PhD position starting in Fall 2027</em></strong>, and am happy to discuss potential research fit and collaboration opportunities.</p>
+    </div>
+  </header>
+  <nav class="section-nav" aria-label="Page sections">
+    <a href="#research">Research</a><a href="#service">Service</a><a href="#beyond-research">Beyond Research</a>
+  </nav>
+
+  <section id="research" aria-labelledby="research-heading">
+    <h2 id="research-heading">Research Interests</h2>
+    <p>My research focuses on <strong>building efficient and reliable AI systems</strong> through cross-stack optimization and automated systems development.</p>
+    <ul class="research-interests">
+      <li><strong>Systems and architecture for emerging AI workloads.</strong> I study efficient execution across models, runtimes, and hardware, with a recent focus on embodied AI and its real-world deployment.</li>
+      <li><strong>Reliable code generation and optimization with coding agents.</strong> I study how to make agent-generated code more reliable by improving how human intention is specified, evaluated, and fed back to agents.</li>
+    </ul>
+
+    <h2 class="publications-heading" id="publications">Publications</h2>
+
+    <article class="paper">
+      <div class="paper-visual">
+        <a href="assets/btd-figure.pdf" aria-label="View full figure: Behavioral Test Diversity"><img src="assets/btd-figure.png" alt="Behavioral Test Diversity uses repair transfer to measure distinct code behaviors and guide test-suite pruning and expansion." width="1800" height="613" loading="lazy"></a>
+      </div>
+      <div>
+        <h3 id="paper-btd">Behavioral Test Diversity: Quantifying Test Suite Diversity Through Agentic Code Repair</h3>
+        <p class="authors"><strong>Yichong Zhang</strong>, Genghan Zhang, Zishen Wan, Kunle Olukotun, Olivia Hsu</p>
+        <p class="venue">Submitted to ICLR 2027 <span class="status">· Under review</span></p>
+        <p class="paper-summary">More tests do not necessarily provide coding agents with more diverse behavioral specifications. BTD measures diversity by checking whether a repair for one test also satisfies others, and uses this signal to guide test-suite pruning and expansion.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-visual">
+        <a href="assets/dyserve-stack.png" aria-label="View full figure: Dyserve compiler and adaptive runtime architecture"><img src="assets/dyserve-stack.png" alt="Dyserve compiler and adaptive runtime architecture" width="1030" height="806" loading="lazy"></a>
+      </div>
+      <div>
+        <h3><a href="https://arxiv.org/abs/2607.02942">Serving Agentic Workflows with a Physical-Plan Compiler and Adaptive Runtime</a></h3>
+        <p class="authors">Jiayi Qian, <strong>Yichong Zhang</strong>, Hanchen Yang, Chun Tao, Souvik Kundu, Zishen Wan, Tushar Krishna</p>
+        <p class="venue">Submitted to ASPLOS 2027 <span class="status">· Under review</span></p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2607.02942">arXiv</a></p>
+        <p class="paper-summary">Dyserve jointly optimizes model selection, verification policies, and backend assignment for agentic workflows. A profile-guided compiler and an adaptive runtime coordinate these decisions as serving load changes, balancing output quality, latency, and throughput.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-visual">
+        <a href="assets/flashoverlap-teaser-v1.png" aria-label="View full figure: FlashOverlap signaling-based overlap compared with other approaches"><img src="assets/flashoverlap-teaser-v1.png" alt="FlashOverlap signaling-based overlap compared with other approaches" width="571" height="373" loading="lazy"></a>
+      </div>
+      <div>
+        <h3 id="paper-flashoverlap"><a href="https://arxiv.org/abs/2504.19519">Efficient and Adaptable Overlapping for Computation and Communication via Signaling and Reordering</a></h3>
+        <p class="authors">Ke Hong, Xiuhong Li, Minxu Liu, Qiuli Mao, Tianqi Wu, Zixiao Huang, Lufang Chen, Zhong Wang, <strong>Yichong Zhang</strong>, Zhenhua Zhu, Guohao Dai, Yu Wang</p>
+        <p class="venue">EuroSys, 2026</p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2504.19519">arXiv</a><a href="https://github.com/infinigence/FlashOverlap">Code</a></p>
+        <p class="paper-summary">FlashOverlap reduces communication overhead in multi-GPU workloads by allowing completed output tiles to be communicated while computation continues. Tile-level signaling and data reordering enable fine-grained overlap while reusing existing NCCL communication primitives.</p>
+      </div>
+    </article>
+
+    <article class="paper">
+      <div class="paper-visual">
+        <a href="assets/paro-teaser.png" aria-label="View full figure: PAROAttention pattern-aware token reordering and visual generation results"><img src="assets/paro-teaser.png" alt="PAROAttention pattern-aware token reordering and visual generation results" width="3350" height="1132" loading="lazy"></a>
+      </div>
+      <div>
+        <h3 id="paper-paro"><a href="https://arxiv.org/abs/2506.16054">PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models</a></h3>
+        <p class="authors">Tianchen Zhao, Ke Hong, Xinhao Yang, Xuefeng Xiao, Huixia Li, Feng Ling, Ruiqi Xie, Siqi Chen, Hongyu Zhu, <strong>Yichong Zhang</strong>, Yu Wang</p>
+        <p class="venue">NeurIPS, 2025</p>
+        <p class="paper-links"><a href="https://arxiv.org/abs/2506.16054">arXiv</a><a href="https://a-suozhang.xyz/paroattn.github.io/">Project</a></p>
+        <p class="paper-summary">PAROAttention reorganizes irregular visual attention patterns into hardware-friendly blocks through token reordering. This structure enables effective sparsification and low-bit quantization, accelerating image and video generation while maintaining generation quality.</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="service" id="service" aria-labelledby="service-heading">
+    <h2 id="service-heading">Academic Service</h2>
+    <ul>
+      <li>Reviewer, ICLR 2027</li>
+      <li>Reviewer, NeurIPS 2026 Workshop <a href="https://verify-agents-workshop.github.io/">Who Verifies the Agents? Toward Reliable Agent Development</a></li>
+    </ul>
+  </section>
+
+  <section id="beyond-research" aria-labelledby="beyond-heading">
+    <h2 id="beyond-heading">Beyond Research</h2>
+    <article class="entry">
+      <div class="entry-heading"><h3><a href="https://space.bilibili.com/3546376669497572?spm_id_from=333.337.0.0">My Little Bilibili Corner</a></h3><span class="date">Jun 2023 – Present</span></div>
+      <p class="affiliation">Video creator</p>
+    </article>
+    <article class="entry">
+      <div class="entry-heading"><h3><a href="https://grephap.org">A GreatPerhaps</a></h3><span class="date">Mar 2024 – Jan 2025</span></div>
+      <p class="affiliation">Founder · Career interview project</p>
+    </article>
+    <article class="entry">
+      <div class="entry-heading"><h3>Business Innovation Design (BID)</h3><span class="date">Sep 2024 – Dec 2024</span></div>
+      <p class="affiliation">Tsinghua University · Program member</p>
+    </article>
+  </section>
+
+  <footer>
+    <p>Last updated: October 2026</p>
+    <p>Website style inspired by <a href="https://jonbarron.info/">Jon Barron</a>.</p>
+  </footer>
+</main>
+</body>
+</html>
